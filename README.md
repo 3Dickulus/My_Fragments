@@ -1,2 +1,2 @@
 # My_Fragments
-for Fragmentarium
+Some stuff for Fragmentarium Examples folder
