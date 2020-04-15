@@ -1,2 +1,4 @@
 # My_Fragments
-Some stuff for Fragmentarium Examples folder
+
+These are all modifications from files in the original distribution, I haven't coded any frags from scratch, don't really have to with FragM.
+Just used what's there as templates and examples, still finding new things :D Happy to share.
