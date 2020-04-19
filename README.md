@@ -7,3 +7,4 @@
 
     kudos: https://fractalforums.org/fragmentarium/17/kudos/3407
 
+    testing automated update of Fragmentarium_Examples_Folder repo
