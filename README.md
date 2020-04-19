@@ -6,5 +6,3 @@
     Happy to share.
 
     kudos: https://fractalforums.org/fragmentarium/17/kudos/3407
-
-    Cron daily updates
