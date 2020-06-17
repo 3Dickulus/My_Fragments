@@ -64,7 +64,7 @@ vec3 color(vec2 c) {
 				b = (z.x * z.y); b += b;
 
 				z = Plot(z);
-    
+
 				if(p*p+q*q < 0.000000001) break;
         }
     }
@@ -74,7 +74,7 @@ vec3 color(vec2 c) {
 				b = (2. * (p * q))+(2.*(z.x * z.y));
 
 				z = Plot(z);
-    
+
 				if(p*p+q*q < 0.000000001) break;
       }
     }
@@ -84,7 +84,7 @@ vec3 color(vec2 c) {
 				b = sin(z.y) + (2. * (z.x * z.y));
 
 				z = Plot(z);
-    
+
 				if(p*p+q*q < 0.000000001) break;
       }
     }
@@ -94,7 +94,7 @@ vec3 color(vec2 c) {
 				b = exp(z.y) + (2. * (z.x * z.y));
 
 				z = Plot(z);
-    
+
 				if(p*p+q*q < 0.000000001) break;
       }
     }
@@ -104,7 +104,7 @@ vec3 color(vec2 c) {
 				b = exp(z.y) + (2. * (z.x * z.y));
 
 				z = Plot(z);
-    
+
 				if(p*p+q*q < 0.000000001) break;
       }
     }
