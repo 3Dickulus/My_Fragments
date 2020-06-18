@@ -1,3 +1,4 @@
+
 #include "MathUtils.frag"
 #include "Progressive2D.frag"
 #info Derived from...
@@ -20,8 +21,19 @@ uniform float One; slider[-4,1,4]
 uniform float Two; slider[-4,2,4]
 uniform bool AbsX; checkbox[false]
 uniform bool AbsY; checkbox[false]
+uniform bool ReflX; checkbox[false]
+uniform bool ReflY; checkbox[true]
+uniform float ROne; slider[-4,0,4]
+uniform float RTwo; slider[-4,1,4]
 
 vec2 c2 = vec2(JuliaX,JuliaY);
+
+float refl(float val, float axis, bool dir) {
+	if ((dir && val > axis) || (!dir && val < axis)) {
+		return (val-axis)*-1. + axis;
+	}
+	return val;
+}
 
 vec3 color(vec2 c) {
 	c *= vec2(1.,-1.);
@@ -34,10 +46,14 @@ vec3 color(vec2 c) {
 	for (i = 0; i < Iterations; i++) {
 		if(AbsX) z.x=abs(z.x);
 		if(AbsY) z.y=abs(z.y);
+
       twoxy = Two * z.x * z.y;
       newzi = twoxy * (One + cos(twoxy)) + (Julia ? c2.y : c.y);
       z.x = z.x * z.x - z.y * z.y + (Julia ? c2.x : c.x);
       z.y = newzi;
+
+		if(ReflX || ReflY)
+			z = vec2(refl(z.x, ROne, ReflX), refl(z.y, RTwo, ReflY));
 
 		len = max(len,dot(z,z));
 		if ( (len > Bailout)) break;
