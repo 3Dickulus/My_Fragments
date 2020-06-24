@@ -157,93 +157,91 @@ float m, n;
 
 
 #preset Default
-Gamma = 2.08335
-Brightness = 1
-Contrast = 1
-Saturation = 1
-Center = 1.0135237,0.118390411
-Zoom = 0.20112196
-ToneMapping = 3
-Exposure = 0.6522
-AARange = 2
-AAExp = 1
-GaussianAA = true
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 256
 R = 0
 G = 0.4
 B = 0.7
-Mult = 2
 ColDiv = 16
 Formula = 0
 XY = 0,0
 Invert = false
 InvertC = 0,0
-#endpreset
-
-#preset Formula1
+Center = 1.0135237,0.118390411
+Zoom = 0.20112196
 Gamma = 2.08335
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
-Center = 0.104287058,0.027244821
-Zoom = 0.351763565
-ToneMapping = 3
-Exposure = 0.6522
 AARange = 2
 AAExp = 1
 GaussianAA = true
+#endpreset
+
+#preset Formula1
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 256
 R = 0
 G = 0.4
 B = 0.7
-Mult = 2
 ColDiv = 16
 Formula = 1
 XY = 0,0
 Invert = false
 InvertC = 0,0
-#endpreset
-
-#preset Formula2
+Center = 0.104287058,0.027244821
+Zoom = 0.351763565
 Gamma = 2.08335
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
-Center = 2.11695743,-0.001897514
-Zoom = 0.075609195
-ToneMapping = 3
-Exposure = 0.6522
 AARange = 2
 AAExp = 1
 GaussianAA = true
+#endpreset
+
+#preset Formula2
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 256
 R = 0
 G = 0.4
 B = 0.7
-Mult = 2
 ColDiv = 16
 Formula = 2
 XY = 0,0
 Invert = false
 InvertC = 0,0
-#endpreset
-
-#preset Mag3Chicken
-Center = 10.991687,7.0754155
-Zoom = 0.008137061
-EnableTransform = true
-RotateAngle = 0
-StretchAngle = 0
-StretchAmount = 0
+Center = 2.11695743,-0.001897514
+Zoom = 0.075609195
 Gamma = 2.08335
-ToneMapping = 3
-Exposure = 0.6522
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
 AARange = 2
 AAExp = 1
 GaussianAA = true
+#endpreset
+
+#preset Mag3Chicken
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 1000
 R = 0
 G = 0.4
@@ -253,24 +251,24 @@ Formula = 3
 XY = 0.81594852,-1.09
 Invert = true
 InvertC = 0.8757853,-0.0807427
-#endpreset
-
-#preset Mag2Loopy
-Center = -230.389695,207.788041
-Zoom = 0.001520875
-EnableTransform = true
-RotateAngle = 0
-StretchAngle = 0
-StretchAmount = 0
+Center = 10.991687,7.0754155
+Zoom = 0.008137061
 Gamma = 2.08335
-ToneMapping = 3
-Exposure = 0.6522
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
 AARange = 2
 AAExp = 1
 GaussianAA = true
+#endpreset
+
+#preset Mag2Loopy
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 1000
 R = 0
 G = 0.4
@@ -280,52 +278,51 @@ Formula = 2
 XY = 0.6651736,-0.64277716
 Invert = true
 InvertC = -1.8680089,2.572707
-#endpreset
-
-#preset Mag1ChasingMinis
+Center = -245.159987,201.117586
+Zoom = 0.001749006
 Gamma = 2.08335
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
-Zoom = 0.076143523
+AARange = 2
+AAExp = 1
+GaussianAA = true
+#endpreset
+
+#preset Mag1ChasingMinis
 EnableTransform = true
 RotateAngle = 0
 StretchAngle = 0
 StretchAmount = 0
-ToneMapping = 3
-Exposure = 0.6522
-AARange = 2
-AAExp = 1
-GaussianAA = true
 Iterations = 1000
 R = 0
 G = 0.4
 B = 0.7
-Mult = 2
 ColDiv = 179.472789
 Formula = 1
 XY = 0.6114222,0.3650616
 Invert = true
 InvertC = 0.8165549,1.732808
 Center = 28.6760571,-1.99732156
-#endpreset
-
-#preset Mag0CatAndMouse
-Center = -0.528611285,-2.42545012
-Zoom = 0.133175497
-EnableTransform = true
-RotateAngle = 0
-StretchAngle = 0
-StretchAmount = 0
+Zoom = 0.076143523
 Gamma = 2.08335
-ToneMapping = 3
-Exposure = 0.6522
+ToneMapping = 1
+Exposure = 1
 Brightness = 1
 Contrast = 1
 Saturation = 1
 AARange = 2
 AAExp = 1
 GaussianAA = true
+#endpreset
+
+#preset Mag0CatAndMouse
+EnableTransform = true
+RotateAngle = 0
+StretchAngle = 0
+StretchAmount = 0
 Iterations = 1000
 R = 0
 G = 0.4
@@ -335,4 +332,15 @@ Formula = 0
 XY = -0.52864724,-1.5000896
 Invert = true
 InvertC = 0.6599553,0.8948546
+Center = -0.528611285,-2.42545012
+Zoom = 0.133175497
+Gamma = 2.08335
+ToneMapping = 1
+Exposure = 1
+Brightness = 1
+Contrast = 1
+Saturation = 1
+AARange = 2
+AAExp = 1
+GaussianAA = true
 #endpreset
