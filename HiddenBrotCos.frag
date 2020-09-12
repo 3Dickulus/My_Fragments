@@ -22,9 +22,9 @@ uniform float Two; slider[-4,2,4]
 uniform bool AbsX; checkbox[false]
 uniform bool AbsY; checkbox[false]
 uniform bool ReflX; checkbox[false]
-uniform bool ReflY; checkbox[true]
-uniform float ROne; slider[-4,0,4]
-uniform float RTwo; slider[-4,1,4]
+uniform bool ReflY; checkbox[false]
+uniform float RX; slider[-4,0,4]
+uniform float RY; slider[-4,1,4]
 
 vec2 c2 = vec2(JuliaX,JuliaY);
 
@@ -52,8 +52,10 @@ vec3 color(vec2 c) {
       z.x = z.x * z.x - z.y * z.y + (Julia ? c2.x : c.x);
       z.y = newzi;
 
-		if(ReflX || ReflY)
-			z = vec2(refl(z.x, ROne, ReflX), refl(z.y, RTwo, ReflY));
+		if(ReflX)
+			z.x = refl(z.x, RX, ReflX);
+		if(ReflY)
+			z.y = refl(z.y, RY, ReflY);
 
 		len = max(len,dot(z,z));
 		if ( (len > Bailout)) break;
