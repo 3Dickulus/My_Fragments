@@ -101,7 +101,7 @@ float b=abs(c2.x)+c2.y;
     }
 
     if (i < Iterations) {
-      float co = i - log2(log2(dist));  // equivalent optimized smooth interation count
+      float co = float(i) - log2(log2(dist));  // equivalent optimized smooth interation count
 		// float co =  i + 1. - log2(.5*log2(dot(z,z)));
 		co = 6.2831*sqrt(co/ColDiv);
 		return 1.-(.5+.5*vec3( cos(co+R),cos(co+G),cos(co+B)) );
