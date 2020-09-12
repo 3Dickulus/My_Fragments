@@ -1,6 +1,7 @@
 // Output generated from file: /home/toonfish/Fragmentarium/Examples/2D Systems/MandelbrotOrbitTrap.frag
 // Created: Sat Mar 21 23:38:09 2020
 #include "MathUtils.frag"
+#include "Complex.frag"
 #include "Progressive2D.frag"
 #info Mandelbrot
 #group Mandelbrot
@@ -22,10 +23,6 @@ vec2 c2 = vec2(JuliaX,JuliaY);
 
 void init() {}
 
-vec2 complexMul(vec2 a, vec2 b) {
-	return vec2( a.x*b.x -  a.y*b.y,a.x*b.y + a.y * b.x);
-}
-
 vec2 mapCenter = vec2(0.5,0.5);
 float mapRadius =0.3;
 uniform bool ShowMap; checkbox[true]
@@ -43,7 +40,7 @@ vec3 getMapColor2D(vec2 c) {
 	
 	int i = 0;
 	for (i = 0; i < Iterations; i++) {
-		z = complexMul(z,z) +p;
+		z = cMul(z,z) +p;
 		if (! (dot(z,z) < 200.0)) break;
 	}
 	if (! (dot(z,z) < 200.0)) {
@@ -70,7 +67,7 @@ vec3 color(vec2 c) {
 	for (i = 0; i < Iterations; i++) {
    c.x+=z.x*float(i)/float(Iterations+i);
    c.y+=z.y*float(i)/float(Iterations+i);
-		z = complexMul(z,z) + (Julia ? c2 : c);
+		z = cMul(z,z) + (Julia ? c2 : c);
 		if (! (length(z) < 100.0)) break;
 		dist = min(dist, abs(length(z)-Radius));
 		//	dist = min(dist, length(z.y));
