@@ -1,4 +1,4 @@
-// Output generated from file: /home/toonfish/Fragmentarium/Examples/2D Systems/Mandelbrot-DE.frag
+// Output generated from file: Examples/2D Systems/Mandelbrot-DE.frag
 // Created: Sat Mar 21 23:45:10 2020
 #include "MathUtils.frag"
 #include "Progressive2D.frag"

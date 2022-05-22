@@ -1,4 +1,4 @@
-// Output generated from file: /home/toonfish/Fragmentarium/Examples/2D Systems/MandelbrotOrbitTrap.frag
+// Output generated from file: Examples/2D Systems/MandelbrotOrbitTrap.frag
 // Created: Sat Mar 21 23:38:09 2020
 #include "MathUtils.frag"
 #include "Complex.frag"

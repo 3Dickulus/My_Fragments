@@ -1,5 +1,5 @@
 #version 400 compatibility
-// Output generated from file: /home/toonfish/Fragmentarium/Examples/2D Systems/Metabrot.frag
+// Output generated from file: Examples/2D Systems/Metabrot.frag
 // Created: Sat Mar 21 23:19:15 2020
 #define USE_DOUBLE
 #include "MathUtils.frag"
